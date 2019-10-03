@@ -22,10 +22,9 @@ def callback():
     decoded = json.loads(json_line)
     user = decoded['originalDetectlntentRequest']['payload']['data']['replyToken']
     userText = decoded['queryResult']['intent']['dieplayName']
-    #sendText(user,userText)
-    if (a2 == 'สวัสดี') :
+    if (userText == 'สวัสดี') :
       sendText (user,'เออ!!! ดีด้วย')
-    elif (a2 == 'ไอ้บ้า') :
+    elif (user == 'ไอ้บ้า') :
       sendText (user,'อึงซิบ้า')
     else :
       sendText (user,'ฉันไม่เข้าใจ')       
