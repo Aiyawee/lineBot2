@@ -24,8 +24,8 @@ def callback():
     userText = decoded['queryResult']['intent']['dieplayName']
     if (userText == 'สวัสดี') :
       sendText (user,'เออ!!! ดีด้วย')
-    elif (user == 'ไอ้บ้า') :
-      sendText (user,'อึงซิบ้า')
+    elif (user == 'ทำไรอยู่') :
+      sendText (user,'นอน')
     else :
       sendText (user,'ฉันไม่เข้าใจ')       
     return '',200
